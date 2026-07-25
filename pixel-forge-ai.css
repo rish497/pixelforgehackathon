@@ -1503,3 +1503,232 @@ select {
         height: 1.5rem;
     }
 }
+/* =========================
+   SPONSORED TOP BANNER
+========================= */
+
+.sponsor-banner-section {
+    position: relative;
+    z-index: 10;
+    padding: 1.25rem 0 1.4rem;
+    border-bottom: 1px solid rgba(17, 233, 255, 0.2);
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(17, 233, 255, 0.1),
+            transparent 34rem
+        ),
+        rgba(2, 2, 10, 0.94);
+}
+
+.sponsor-banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsor-banner-label {
+    align-self: center;
+    margin-bottom: 0.45rem;
+    color: var(--muted-2);
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.sponsor-banner-link {
+    padding:5px;
+    position: relative;
+    display: block;
+    width: min(820px, 100%);
+    overflow: hidden;
+    background: rgba(7, 11, 36, 0.9);
+    box-shadow:
+        0 12px 36px rgba(0, 0, 0, 0.4),
+        0 0 24px rgba(17, 233, 255, 0.12);
+    transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.sponsor-banner-link:hover,
+.sponsor-banner-link:focus-visible {
+    border-color: rgba(17, 233, 255, 0.75);
+    box-shadow:
+        0 18px 46px rgba(0, 0, 0, 0.5),
+        0 0 34px rgba(17, 233, 255, 0.26);
+}
+
+.sponsor-banner-link:hover::after,
+.sponsor-banner-link:focus-visible::after {
+    transform: translateX(130%);
+}
+
+.sponsor-banner-link:focus-visible {
+    outline: 3px solid var(--cyan);
+    outline-offset: 4px;
+}
+
+.sponsor-banner-link img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 820 / 312;
+    object-fit: contain;
+}
+
+/* Tablet */
+@media (max-width: 820px) {
+    .sponsor-banner-section {
+        padding: 1rem 0 1.15rem;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+    .sponsor-banner-section {
+        padding: 0.8rem 0 1rem;
+    }
+
+    .sponsor-banner-label {
+        font-size: 0.6rem;
+    }
+}
+/* =========================
+   FULL-WIDTH SPONSORED BANNER
+========================= */
+
+.sponsor-banner-section {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(17, 233, 255, 0.2);
+    background: #02020a;
+}
+
+.sponsor-banner-container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sponsor-banner-label {
+    position: absolute;
+    top: 160px;
+    right: 14px;
+    z-index: 2;
+    padding: 0.3rem 0.55rem;
+    background: rgba(2, 2, 10, 0.78);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    line-height: 1;
+    text-transform: uppercase;
+    backdrop-filter: blur(6px);
+}
+
+.sponsor-banner-link {
+    display: block;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #061044;
+    transition:
+        filter 180ms ease,
+        transform 180ms ease;
+}
+
+.sponsor-banner-link:hover,
+.sponsor-banner-link:focus-visible {
+    filter: brightness(1.08) saturate(1.06);
+}
+
+.sponsor-banner-link:focus-visible {
+    outline: 3px solid var(--cyan);
+    outline-offset: -3px;
+}
+
+.sponsor-banner-link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Medium screens */
+@media (max-width: 1100px) {
+    .sponsor-banner-link {
+        height: 180px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 820px) {
+    .sponsor-banner-link {
+        height: 150px;
+    }
+
+    .sponsor-banner-link img {
+        object-position: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+    .sponsor-banner-link {
+        padding: 0px;
+        height: 115px;
+    }
+
+    .sponsor-banner-label {
+        top: 5px;
+        left: 7px;
+        padding: 0.24rem 0.4rem;
+        font-size: 0.52rem;
+    }
+
+    .sponsor-banner-link img {
+        object-position: center;
+    }
+}
+/* Mobile */
+@media (max-width: 560px) {
+    .sponsor-banner-container {
+        position: relative;
+    }
+
+    .sponsor-banner-link {
+        height: 115px;
+    }
+
+    .sponsor-banner-label {
+        top: auto;
+        left: auto;
+        right: 7px;
+        bottom: 7px;
+
+        padding: 0.24rem 0.4rem;
+        font-size: 0.52rem;
+        z-index: 5;
+
+        background: rgba(2, 2, 10, 0.82);
+        border-radius: 5px;
+        color: #ffffff;
+        backdrop-filter: blur(6px);
+    }
+
+    .sponsor-banner-link img {
+        object-position: center;
+    }
+}
