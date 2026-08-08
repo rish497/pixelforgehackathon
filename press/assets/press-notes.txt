@@ -1,0 +1,19 @@
+PIXEL FORGE AI HACKATHON — OFFICIAL PRESS NOTES
+
+Announcement line
+Pixel Forge AI Hackathon brings developers, designers, creators, and innovators together to build functional AI-powered solutions that solve real problems.
+
+Boilerplate
+Pixel Forge AI Hackathon is an online hackathon where developers, designers, creators, and innovators build functional projects using artificial intelligence. Participants may work independently or in teams of up to four, using AI to address real-world challenges across work, education, creativity, productivity, hobbies, and everyday life. Projects can range from chatbots and creative tools to automation systems and autonomous AI agents, with an emphasis on usefulness, creativity, and meaningful AI integration.
+
+Event facts
+- Format: Online
+- Teams: Solo or teams of up to 4
+- Platform: Devpost
+- Website: https://pixelforgejam.org/
+- Devpost: https://pixel-forge-ai-hackathon-08.devpost.com/
+- Discord: https://discord.gg/mM8PpjGyM6
+- Press contact: pixelforgejam@gmail.com
+
+Approved hashtags
+#PixelForgeAI #PixelForgeHackathon #AIHackathon #BuildWithAI #ArtificialIntelligence #Hackathon #OpenSource
