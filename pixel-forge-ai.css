@@ -1649,6 +1649,54 @@ h1 .gradient,
   flex-wrap: wrap;
   gap: 0.7rem;
 }
+.footer-social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.footer-social > span {
+  color: var(--muted);
+  font: 0.72rem var(--mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+.social-link {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(91, 124, 255, 0.06);
+  color: #dfe4ff;
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
+}
+.social-link svg {
+  width: 20px;
+  height: 20px;
+}
+.social-link:hover,
+.social-link:focus-visible {
+  color: #fff;
+  border-color: rgba(89, 217, 255, 0.58);
+  background: linear-gradient(
+    145deg,
+    rgba(91, 124, 255, 0.2),
+    rgba(155, 92, 255, 0.16)
+  );
+  transform: translateY(-2px);
+}
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -1853,6 +1901,10 @@ h1 .gradient,
   .footer-bottom {
     flex-direction: column;
     gap: 0.4rem;
+  }
+  .footer-social {
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
   .hero-v2 {
     min-height: auto;
